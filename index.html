@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- tamilnadu tourism style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+
+
+    <!-- search symbol -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- dropdown symbol -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="main.css">
+
+    <!-- welcomefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+
+
+
+
+
+    <style>
+        /* 0px for margin */
+        * {
+            margin: 0px;
+            padding: 0px;
+            text-transform: capitalize;
+            
+
+        }
+
+
+
+        h1 {
+            font-family: "Dancing Script", cursive;
+            font-optical-sizing: auto;
+            font-weight: 20px;
+            font-style: normal;
+            background-color: rgb(234, 223, 205);
+            height: 20px;
+            padding: 5px;
+
+
+
+        }
+
+
+
+        .para {
+            text-align: right;
+            text-transform: uppercase;
+            background-color: rgb(234, 223, 205);
+            height: 20px;
+            padding: 5px;
+            font-weight: 15px;
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(234, 223, 205);
+        }
+
+        li {
+            float: right;
+        }
+
+        li a {
+            display: block;
+            color: rgb(7, 6, 6);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropdown:hover {
+            background-color: rgb(230, 186, 25);
+            color: white;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: whitesmoke;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #345373;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+
+
+        .image {
+            background-image: url(kanyakumari.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 650px;
+
+
+        }
+
+        .image-container {
+
+            transform: translate(150px,100px);
+            width: 400px;
+            height: 250px;
+
+
+            color: whitesmoke;
+            text-align: center;
+            font-size: 32px;
+            background-color: gray;
+            opacity: 0.8;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        button{
+            background-color: yellow;
+            color: rgb(10, 10, 10);
+            width: 150px;
+            height: 50px;
+            margin: 20px;
+            outline: none;
+            border: none;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        button:hover{
+            background-color: rgb(230, 23, 23);
+            color: white;
+
+           
+            
+        }
+    </style>
+</head>
+
+<body>
+    <!-- heading tag -->
+    <header>
+        <div>
+            <h1>tamilnadu tourism</h1>
+            <p class="para" style="margin-left: 20px;">toll no:1234509398039
+                <i class="fa-solid fa-magnifying-glass" style="margin-left:10px; margin-top: 0px;margin-right: 20px;"></i>
+
+
+
+            </p>
+        </div>
+
+        <nav>
+            <ul>
+                
+
+                <li> <a href=about>about<i class="fa-solid fa-caret-down"></i></a></li>
+                <li> <a href=contact>contact<i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="blog">blog<i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="places to visit">places to visit<i class="fa-solid fa-caret-down"></i></a></li>
+                <li class="dropdown">
+                    <a href="destinations">destinations<i class="fa-solid fa-caret-down"></i></a>
+
+                    <div class="dropdown-content">
+                        <a href="ooty">ooty</a>
+                        <a href="madurai">madurai</a>
+                        <a href="kodaikanal">kodaikanal</a>
+                    </div>
+                </li>
+                <li> <a href=home>home<i class="fa-solid fa-caret-down"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- dropdown link -->
+
+
+
+    <!-- image for cover -->
+    <section>
+        <div class="image">
+            <div class="image-container">
+                <h2>Vivekananda Rock Memorial</h2>
+                
+                <p style="font-size: 15px; margin-top: 20px;"> The Vivekananda Rock Memorial is as timeless as the sage himself.
+
+                </p>
+                <button >explore</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- front content -->
+
+    <section>
+        <div class="welcomesection">
+            <h2 class="frontdesign">welcome to tamilnadu</h2>
+            <p class="parastyle">A potpourri of vibrant cultures, exotic destinations and enduring memories; welcome to
+                one of the heartlands of human
+                civilization.</p>
+            <b>
+                <p class="boldstyle">Tamil Nadu - where stories never end</p>
+            </b>
+
+
+        </div>
+    </section>
+
+
+    <!-- place content -->
+    <section>
+        <div>
+            <h3 class="placevisit">places to visit</h3>
+            <p class="placepara">Discover Tamil Nadu's unique destinations - from UNESCO World Heritage <br><br> Sites
+                to soothing beaches and hill
+                stations.</p>
+        </div>
+    </section>
+
+    <!-- place content images container -->
+    <section>
+        <div class="maincontainer">
+            <!-- ooty -->
+            <div class="ooty">
+                <img src="ooty.jpeg">
+                <div>
+                    <h3 class="ooty-text">ooty</h3>
+                    <p class="ooty-textstyle">A chain of misty hills spread across a lush green carpet – with plenty to
+                        see, enjoy and experience</p>
+
+                </div>
+
+
+            </div>
+
+            <!-- madurai -->
+            <div class="madurai">
+                <img src="madurai.jpeg">
+                <div>
+                    <h3 class="madurai-word">madurai</h3>
+                    <p class="madurai-wordstyle">‘Thoonga Nagaram’ is what Madurai is popularly called in Tamil Nadu. It
+                        means ‘the city that never sleeps’.</p>
+
+                </div>
+
+            </div>
+
+
+            <!-- kodaikanal -->
+            <div class="kodaikanal">
+                <img src="kodaikanal.jpeg">
+                <div>
+                    <h3 class="kodaikanal-text">kodaikanal</h3>
+                    <p class="kodaikanal-textstyle">The scenic beauty of Kodaikanal never ceases to amaze travellers.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- experience -->
+    <section>
+        <div>
+            <h2 class="experi">experience</h2>
+            <p class="experiencepara">If you're looking for some of the best travel experiences to explore in Tamil
+                Nadu,<br><br> you've arrived at the right spot!</p>
+        </div>
+    </section>
+
+
+    <!-- experience image -->
+
+    <section>
+        <div class="experiencecontainer">
+
+            <!-- adventure -->
+            <div class="adventure">
+                <img src="adventure.jpeg">
+                <div>
+                    <h3 class="adventure-text">adventure</h3>
+                </div>
+
+
+            </div>
+
+            <!-- eat&drink -->
+
+            <div class="eatanddrink">
+                <img src="eatanddrink.jpeg">
+                <div>
+                    <h3 class="eatanddrink-text">eat & drink</h3>
+                </div>
+
+            </div>
+
+            <!-- spiritual -->
+
+            <div class="spiritual">
+                <img src="spiritual.jpeg">
+                <div>
+                    <h3 class="spiritual-text">spiritual</h3>
+                </div>
+
+            </div>
+
+            <!-- medial tourism -->
+
+            <div class="medial-tourism">
+                <img src="medial-tpurism.jpeg">
+                <div>
+                    <h3 class="medial-tourism-text">medial-tourism</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- unesco wonders -->
+
+    <section>
+        <div class="tanjoreimage">
+            <div class="wondercontainer">
+
+
+                <div class="wonder">
+                    <h3 class="wonders">UNESCO wonders
+
+                    </h3>
+                </div>
+
+
+
+
+                <div class="wonderpara">
+                    <p class="wonderspara"> Tamil Nadu, the cultural capital of India, boasts of five UNESCO World
+                        Heritage Sites
+                        which you should not miss</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- wonder flex box -->
+
+    <section>
+
+
+    </section>
+
+
+    <!-- things to do -->
+    <section>
+        <div>
+            <h3 class="things">Things to do</h3>
+            <p class="thingstodo" style="text-transform: none;">From paragliding to scuba diving, from taking heritage
+                trails to watching <br><br>
+                cultural activities, there is plenty to do,
+                learn and experience in Tamil Nadu. <br><br> Know more about what this enchanting land has to offer you.
+            </p>
+        </div>
+    </section>
+
+
+
+    <section>
+        <div class="thingscontainer">
+
+            <!-- parasailing -->
+            <div class="parasailing">
+                <img src="parasailing.jpeg">
+                <h3 class="parasail-text">parasailing</h3>
+                <div>
+                    <p style="text-transform: none;">Soar like a bird and float like a butterfly and cherish the ecstasy
+                        and fun of
+                        flying.</p>
+                </div>
+
+
+            </div>
+
+            <!-- surfing -->
+            <div class="surfing">
+                <img src="surfing.jpeg">
+                <h3 class="surfing-text">surfing</h3>
+                <p style="text-transform: none">Tamil Nadu boasts of the second longest coastline in India, and has some
+                    of the best surfing locations in the country.</p>
+
+            </div>
+
+            <!-- hiking -->
+            <div class="hiking">
+                <img src="hiking.jpeg">
+                <h3 class="hiking-text">hiking</h3>
+                <p style="text-transform: none;">Hiking trails that have the magical quality to put you at ease.</p>
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <!-- attractions -->
+    <section>
+        <div>
+            <h3 class="attraction">attractions</h3>
+            <p class="attract" style="text-transform: none;">Here's a list of top attractions in Tamil Nadu that you
+                must experience at the very next opportunity.</p>
+        </div>
+    </section>
+
+
+    <!-- attraction container -->
+
+    <section>
+        <div class="attractcontainer">
+            <!-- temple -->
+            <div class="temple">
+                <img src="temple.jpeg">
+                <h3 class="attract-text">adventure</h3>
+
+            </div>
+            <!-- heritage -->
+            <div class="heritage">
+                <img src="heritage.jpg">
+                <h3 class="attract-text">heritage</h3>
+
+            </div>
+
+            <!-- wildlife -->
+            <div class="wildlife">
+                <img src="wildlife.jpg">
+                <h3 class="attract-text">wildlife</h3>
+
+
+            </div>
+        </div>
+        <div class="attractcontainer">
+            <!-- hills -->
+            <div class="hills">
+                <img src="hills.jpg">
+                <h3 class="attraction-text">hills</h3>
+
+            </div>
+
+            <!-- adventure -->
+            <div class="engage">
+                <img src="engage.jpg">
+                <h3 class="attraction-text">adventures</h3>
+
+            </div>
+
+            <!-- cuisine and gastronomy -->
+
+            <div class="cuisine">
+                <img src="cuisine.jpg">
+                <h3 class="attraction-text">cuisine</h3>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <section>
+        <div>
+            <h3 class="attraction">Gallery</h3>
+            <p class="attract" style="text-transform: none;">Glance through the stunning pictures and videos of tourist
+                attractions in Tamil Nadu!
+            </p>
+            <h5 class="gallery">
+                <span class="photo">photo gallery</span> |
+                <span class="video">video gallery</span>
+            </h5>
+
+
+        </div>
+    </section>
+
+    <section>
+
+        <div class="gallerycontainer">
+
+            <div class="videogallery">
+            <video width="300" height="450" controls>
+                <source src="movie.mp4" type="video/mp4">
+                
+            </video>
+            </div>
+
+            <div class="photogallery">
+                <img src="roadside.jpg">
+                <img src="treeview.jpg">
+
+            </div>
+
+            <div class="videogallery">
+                <img src="templeview.jpg"> 
+
+            </div>
+
+            <div class="photogallery">
+                <img src="nature.jpg">
+                <video width="450" height="300" controls>
+                    <source src="boat.mp4" type="video/mp4">
+                </video>
+
+            </div>
+        </div>
+    </section>
+
+
+
+<section>
+    <div>
+        <h3 class="attraction"> Start planning      </h3>
+        <p class="attract" style="text-transform: none;">Here is some useful information we would like you to know before you jump on a plane.</p>
+    </div>  
+</section>
+
+
+
+
+
+
+
+<section>
+
+
+<div class="startplanning">
+
+
+
+    <div class="visa">
+        <img src="visaguide.jpg">
+        <h3 class="startplan-text">visa guide</h3>
+
+    </div>
+
+    <div class="tamilnadu ">
+        <img src="tamilnadu.jpg">
+        <h3 class="startplan-text">tamilnadu at glance</h3>
+
+
+    </div>
+
+    <div class="travel-tips">
+        <img src="travel-tip.jpg">
+        <h3 class="startplan-text">travel tips</h3>
+
+    </div>
+
+    <div class="airports">
+        <img src="airport.jpg">
+        <h3 class="startplan-text">airports</h3>
+
+    </div>
+</div>
+
+
+</section>
+
+
+<section>
+    <div>
+        <h3 class="attraction">blogs</h3>
+    </div>
+
+    <div class="blogcontainer">
+         
+
+        <div class="cuisines">
+            <img src="cuisines.jpg">
+            <h3 class="blog-text">Cuisines of the Tamil Land</h3>
+            <p class="blog-para">The delectable cuisine of Tamil Nadu is a culinary style which  antiquity and influenced other
+            states South-East Asia.</p>
+
+        </div>
+
+        <div class="regional-cuisines">
+            <img src="regional-cuisine.jpg">
+            <h3 class="blog-text">Explore the regional cuisine of Tamil Nadu</h3>
+            <p class="blog-para">Instead savour each regional cuisine that boasts of unique cooking methods and spices.</p>
+
+        </div>
+
+        <div class="sweet-cuisines">
+            <img src="sweet.jpg">
+            <h3 class="blog-text">Sweet Savouries from Tamil Nilam</h3>
+            <p class="blog-para">Most are healthy preparations using less sugar and include healthy proteins like green gram and chickpea.
+</p>
+
+        </div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="attraction" style="text-transform: none;">Subscribe to our newsletter
+        <p class="blog-para">Subscribe to our newsletter Sign up for Tamilnadu Tourism's monthly newsletter to learn about our events, offers and
+        more...
+</p>
+
+    <form class="formcontainer">
+        <div class="formfield">
+            <label class="formname">Name</label>
+            <input type="text" class="name">
+        </div>
+    
+        <div class="formfield">
+            <label class="formname">Email</label>
+            <input type="email" class="name">
+        </div>
+        <div>
+            <button style="margin: 50px; margin-right: 250px; margin-bottom: 20px;"> subcribe</button>
+        </div>
+    </form>
+
+       
+
+    </div>
+</section>
+
+
+<footer>
+    <div class="footsection">
+        <p class="footfree">Toll Free No: 1800-425-31111 (Within India only) Department of Tourism, Government of Tamil Nadu, #2, Wallajah Road,
+        Chennai - 600002<br><br>
+        Fax: +044 25333385, 25333567 | Email: tourism@tn.gov.in</p>
+
+        <p class="footright">All rights reserved © Tamil Nadu Tourism 2025. Copyright | Terms of Use | Cookie Policy | Contact Us</p>
+        
+
+        <div class="logo">
+            
+        <img src="facebook.png">
+
+        <img src="instagram.png">
+
+        <img src="youtube.png">
+           
+        <img src="twitter.png">
+
+        <img src="linkedin.png">
+
+        </div>
+    </div>
+</footer>
+
+
+
+
+</body>
+
+</html>
