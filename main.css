@@ -75,9 +75,14 @@ header {
 .maincontainer {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
+@media (min-width:800px) and (max-width:1000px){
+    .maincontainer{
+        display: block;
+    }
+}
 
 /* place ooty */
 .ooty {
