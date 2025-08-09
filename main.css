@@ -78,7 +78,7 @@ header {
     /* flex-wrap: wrap; */
 }
 
-@media (min-width:800px) and (max-width:1000px){
+@media (max-width: 768px){
     .maincontainer{
         display: block;
     }
